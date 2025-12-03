@@ -2,7 +2,7 @@
 
 import { FC } from 'react'
 import scss from './Catalog.module.scss'
-import { CatalogList } from '@/entities/catalogList'
+import { CatalogList } from '../../../entities/catalogList'
 // import Button from '@/shared/ui/button'
 
 const CatalogSection: FC = () => {
