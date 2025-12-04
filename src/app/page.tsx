@@ -1,12 +1,7 @@
-import { TestSection } from '@/widgets/testSection/ui/TestSection';
-import React from 'react';
+import React from "react";
 
 const page = () => {
-    return (
-        <div>
-            <TestSection />
-        </div>
-    );
+  return <div></div>;
 };
 
 export default page;
