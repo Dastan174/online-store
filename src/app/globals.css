@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Inter, sans-serif;
   box-sizing: border-box;
   text-decoration: none;
   /* outline: 1px solid blue; */
@@ -37,21 +37,31 @@ body {
 }
 
 h1 {
+  font-size: clamp(1.813rem, 1.609rem + 0.93vw, 2.5rem);
+  font-weight: 500;
 }
 h2 {
 }
 h3 {
+  font-size: clamp(1.063rem, 0.859rem + 0.93vw, 1.75rem);
+  font-weight: 300;
 }
 h4 {
+  font-size: clamp(0.938rem, 0.771rem + 0.76vw, 1.5rem);
+  font-weight: 400;
 }
 h5 {
+    font-size:clamp(0.625rem, 0.533rem + 0.42vw, 0.938rem);
+    font-weight: 300;
 }
-
+p{
+  color: #44444E;
+}
 p,
 a {
-  font-size: 16px;
+  font-size: clamp(0.688rem, 0.595rem + 0.42vw, 1rem);
   font-weight: 400;
-  line-height: 32px;
+  /* line-height: 32px; */
   transition: border-bottom 1s ease-in;
 }
 
