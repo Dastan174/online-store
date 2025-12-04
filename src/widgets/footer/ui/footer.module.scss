@@ -1,0 +1,92 @@
+.container {
+  padding: 20px;
+  background: #fff;
+
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 60px;
+    background: radial-gradient(circle, #ffc400 0%, #ff9900 100%);
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    span {
+      font-size: 14px;
+      color: #44444e;
+    }
+
+    .socials {
+      display: flex;
+      gap: 8px;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 16px;
+      }
+
+      .wa {
+        background: #25d366;
+      }
+      .tg {
+        background: #0088cc;
+      }
+      .vk {
+        background: #4a76a8;
+      }
+    }
+  }
+
+  .text {
+    // margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #444;
+  }
+}
+
+// Адаптив
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .button {
+    width: 200px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 350px) {
+  .icons span {
+    font-size: 12px;
+  }
+  .socials a {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+  .text {
+    font-size: 12px;
+  }
+}
