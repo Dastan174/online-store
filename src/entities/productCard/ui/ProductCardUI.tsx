@@ -1,6 +1,9 @@
 import scss from "./productCardUi.module.scss";
 
 interface ProductCardProps {
+  product: ProductCard;
+}
+interface ProductCard {
   img: string;
   productName: string;
   brend: string;
@@ -9,34 +12,27 @@ interface ProductCardProps {
   price: number;
 }
 
-const ProductCardUI = ({
-  img = "https://lh6.googleusercontent.com/proxy/GjN501iwXUTQqlmhCzWe3aGqsZ16va1tpQFo5CeUblbo5jw7zQGKepcJaYcdnG0BEPPcCtXfY45-PWXeTqVkpMy5gyykblNGARDk5EzDK-4pWX8SxDuA5ntKSnFGzw",
-  productName = "Профнастил HC35",
-  brend = "Grandeline",
-  maxLength = "12",
-  minLength = "0,5",
-  price = 412,
-}: ProductCardProps) => {
+const ProductCardUI = ({ product }: ProductCardProps) => {
   return (
     <section className={scss.card}>
-      <img src={img} alt={productName} className={scss.image} />
+      <img src={product.img} alt={product.productName} className={scss.image} />
 
-      <h2 className={scss.title}>{productName}</h2>
+      <h2 className={scss.title}>{product.productName}</h2>
 
       <div className={scss.brends}>
         <p>Бренд</p>
-        <p className={scss.value}>{brend}</p>
+        <p className={scss.value}>{product.brend}</p>
 
         <p>Максимальная длина, м</p>
-        <p className={scss.value}>{maxLength}</p>
+        <p className={scss.value}>{product.maxLength}</p>
 
         <p>Минимальная длина, м</p>
-        <p className={scss.value}>{minLength}</p>
+        <p className={scss.value}>{product.minLength}</p>
       </div>
 
       <div className={scss.priceBlock}>
         <span>от</span>
-        <h3>{price} ₽ / м²</h3>
+        <h3>{product.price} ₽ / м²</h3>
       </div>
 
       <div className={scss.selects}>

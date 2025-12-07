@@ -13,7 +13,7 @@ export default function AboutUs() {
         <div className={scss.mainContainer}>
           <div className={scss.aboutUS}>
             <h1>
-              О НАС <br  className={scss.brH1}/> и НАШЕМ БИЗНЕСЕ
+              О НАС <br className={scss.brH1} /> и НАШЕМ БИЗНЕСЕ
             </h1>
             <p>
               Каждому клиенту мы гарантируем взаимовыгодные условия

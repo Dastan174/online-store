@@ -1,52 +1,53 @@
 .section {
-	padding: 40px 0;
+  padding: 40px 0;
 }
 .textCatalog {
-	font-family: 'Gilroy', sans-serif;
-	font-weight: 500;
-	font-size: 56px;
-	line-height: 1;
-	text-transform: uppercase;
-	background: radial-gradient(
-		106.03% 136.67% at 50% 0%,
-		#ffc400 0%,
-		#ff9900 100%
-	);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	margin-bottom: 32px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 1;
+  text-transform: uppercase;
+  background: radial-gradient(
+    106.03% 136.67% at 50% 0%,
+    #ffc400 0%,
+    #ff9900 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 32px;
 }
 .cards {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // gap: 65px;
 }
 .title {
-	font-family: 'Gilroy', sans-serif;
-	font-weight: 500;
-	font-size: 44px;
-	line-height: 1;
-	text-transform: uppercase;
-	background: linear-gradient(
-		269.73deg,
-		#4b4a53 9.23%,
-		#808086 54.08%,
-		#4b4a53 99.88%
-	);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	margin: 24px 0 16px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1;
+  text-transform: uppercase;
+  background: linear-gradient(
+    269.73deg,
+    #4b4a53 9.23%,
+    #808086 54.08%,
+    #4b4a53 99.88%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 24px 0 16px;
 }
 .filters {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 12px;
-	margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
 }
 .grid {
-	display: grid;
-	gap: 24px;
-	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 }
 
 /* ============================= */
@@ -54,97 +55,97 @@
 /* ============================= */
 
 @media (max-width: 1200px) {
-	.section {
-		padding: 36px 20px;
-	}
-	.textCatalog {
-		font-size: 48px;
-		margin-bottom: 28px;
-	}
-	.title {
-		font-size: 38px;
-		margin: 20px 0 14px;
-	}
-	.cards {
-		gap: 50px;
-	}
+  .section {
+    padding: 36px 20px;
+  }
+  .textCatalog {
+    font-size: 48px;
+    margin-bottom: 28px;
+  }
+  .title {
+    font-size: 38px;
+    margin: 20px 0 14px;
+  }
+  .cards {
+    gap: 50px;
+  }
 }
 
 @media (max-width: 1024px) {
-	.section {
-		padding: 32px 16px;
-	}
-	.textCatalog {
-		font-size: 44px;
-		margin-bottom: 24px;
-	}
-	.title {
-		font-size: 34px;
-		margin: 18px 0 12px;
-	}
-	.cards {
-		gap: 40px;
-	}
-	.filters {
-		gap: 10px;
-		margin-bottom: 32px;
-	}
-	.grid {
-		grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-		gap: 20px;
-	}
+  .section {
+    padding: 32px 16px;
+  }
+  .textCatalog {
+    font-size: 44px;
+    margin-bottom: 24px;
+  }
+  .title {
+    font-size: 34px;
+    margin: 18px 0 12px;
+  }
+  .cards {
+    gap: 40px;
+  }
+  .filters {
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+  }
 }
 
 @media (max-width: 768px) {
-	.section {
-		padding: 28px 12px;
-	}
-	.textCatalog {
-		font-size: 36px;
-		margin-bottom: 20px;
-		text-align: center;
-	}
-	.title {
-		font-size: 28px;
-		margin: 16px 0 10px;
-		text-align: center;
-	}
-	.cards {
-		gap: 32px;
-		justify-content: center;
-	}
-	.filters {
-		gap: 8px;
-		margin-bottom: 24px;
-		justify-content: center;
-	}
-	.grid {
-		grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-		gap: 16px;
-	}
+  .section {
+    padding: 28px 12px;
+  }
+  .textCatalog {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .title {
+    font-size: 28px;
+    margin: 16px 0 10px;
+    text-align: center;
+  }
+  .cards {
+    gap: 32px;
+    justify-content: center;
+  }
+  .filters {
+    gap: 8px;
+    margin-bottom: 24px;
+    justify-content: center;
+  }
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+  }
 }
 
 @media (max-width: 480px) {
-	.section {
-		padding: 24px 8px;
-	}
-	.textCatalog {
-		font-size: 28px;
-		margin-bottom: 16px;
-	}
-	.title {
-		font-size: 24px;
-		margin: 14px 0 8px;
-	}
-	.cards {
-		gap: 24px;
-	}
-	.filters {
-		gap: 6px;
-		margin-bottom: 20px;
-	}
-	.grid {
-		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-		gap: 12px;
-	}
+  .section {
+    padding: 24px 8px;
+  }
+  .textCatalog {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .title {
+    font-size: 24px;
+    margin: 14px 0 8px;
+  }
+  .cards {
+    gap: 24px;
+  }
+  .filters {
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+  }
 }
