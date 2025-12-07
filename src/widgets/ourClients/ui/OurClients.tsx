@@ -1,7 +1,7 @@
 import React from "react";
 import scss from "./ourClients.module.scss";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
-import ReviewCard from "@/entities/reviewCard/ui/ReviewCard";
+import ReviewCard from "../../../entities/reviewCard/ui/ReviewCard";
 
 const reviews = [
   {

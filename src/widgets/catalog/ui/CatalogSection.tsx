@@ -3,6 +3,7 @@
 import { FC } from 'react'
 import scss from './Catalog.module.scss'
 import { CatalogList } from '../../../entities/catalogList'
+import ProductCardUI from '../../../entities/productCard/ui/ProductCardUI'
 // import Button from '@/shared/ui/button'
 
 const CatalogSection: FC = () => {
@@ -23,7 +24,7 @@ const CatalogSection: FC = () => {
 
 				<h2 className={scss.title}>Металлочерепица</h2>
 				<div className={scss.cards}>
-					<CatalogList items={metalItems} />
+					<ProductCardUI/>
 				</div>
 				<h2 className={scss.title}>Профнастил</h2>
 				<div className={scss.cards}>

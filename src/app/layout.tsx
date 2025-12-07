@@ -1,6 +1,15 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
+import Header from '../widgets/header/ui/Header'
+import Hero from '../widgets/hero/ui/Hero'
+import AboutUs from '../widgets/aboutUs/ui/AboutUs'
+import QuestionsSection from '../widgets/questionsSection/ui/QuestionsSection'
+import ProductCardUI from '../entities/productCard/ui/ProductCardUI'
+import { TestSection } from '../widgets/testSection/ui/TestSection'
+import CatalogSection from '../widgets/catalog/ui/CatalogSection'
+import OurClients from '../widgets/ourClients/ui/OurClients'
+import { Footer } from '../widgets/footer'
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -25,6 +34,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+		<Header/>
+		<Hero/>
+		<AboutUs/>
+		<TestSection/>
+		<CatalogSection/>
+		<QuestionsSection/>
+		<OurClients/>
+		<Footer/>
         {children}
       </body>
     </html>

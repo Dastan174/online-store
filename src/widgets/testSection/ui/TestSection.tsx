@@ -1,6 +1,6 @@
-import { TestOptionCard } from "@/entities/testOptionCard/ui/TestOptionCard";
 import scss from "./testSection.module.scss";
-import InfoItem from "@/entities/infoItem/ui/InfoItem";
+import InfoItem from "../../../entities/infoItem/ui/InfoItem";
+import { TestOptionCard } from "../../../entities/testOptionCard/ui/TestOptionCard";
 
 export const TestSection = () => {
   return (
