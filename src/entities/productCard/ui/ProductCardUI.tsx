@@ -1,4 +1,6 @@
+import React from "react";
 import scss from "./productCardUi.module.scss";
+
 
 interface ProductCardProps {
   img: string;
