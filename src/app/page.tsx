@@ -23,6 +23,7 @@ export default function Home() {
         <OurClients />
       </div>
       <Footer />
+        <ProductForm />
     </div>
   );
 }
