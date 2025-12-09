@@ -5,6 +5,7 @@ import { Header } from "../widgets/header";
 import Hero from "../widgets/hero/ui/Hero";
 import OurClients from "../widgets/ourClients/ui/OurClients";
 import QuestionsSection from "../widgets/questionsSection/ui/QuestionsSection";
+import Sidebar from "../widgets/sidebar/ui/Sidebar";
 import { TestSection } from "../widgets/testSection/ui/TestSection";
 
 const page = () => {
