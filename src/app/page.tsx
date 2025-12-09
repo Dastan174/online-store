@@ -1,14 +1,11 @@
-import { Footer } from "@/widgets/footer";
-import { Header } from "@/widgets/header";
+import React from 'react';
 
-export default function Home() {
+const page = () => {
   return (
-    <div
-      style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
-    >
-      <Header />
-      <div style={{ flex: 1 }}></div>
-      <Footer />
+    <div>
+      
     </div>
   );
-}
+};
+
+export default page;

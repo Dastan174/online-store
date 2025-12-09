@@ -2,13 +2,10 @@
 
 import { FC } from 'react'
 import scss from './Catalog.module.scss'
-import { CatalogList } from '../../../entities/catalogList'
-// import Button from '@/shared/ui/button'
-
+import { CatalogList } from '@/entities/catalogList'
+import ProductCardUI from '@/entities/productCard/ui/ProductCardUI'
 const CatalogSection: FC = () => {
 	const filters = ['Все', 'Металлочерепица', 'Профнастил', 'Фальцевая кровля']
-	const metalItems = ['М1', 'М2', 'М3']
-	const profItems = ['П1', 'П2', 'П3', 'П4']
 
 	return (
 		<section className={scss.section}>
@@ -23,15 +20,15 @@ const CatalogSection: FC = () => {
 
 				<h2 className={scss.title}>Металлочерепица</h2>
 				<div className={scss.cards}>
-					<CatalogList items={metalItems} />
+					<CatalogList />
 				</div>
 				<h2 className={scss.title}>Профнастил</h2>
 				<div className={scss.cards}>
-					<CatalogList items={profItems} />
+					<CatalogList />
 				</div>
 				<h2 className={scss.title}>Фальцевая кровля</h2>
 				<div className={scss.cards}>
-					<CatalogList items={profItems} />
+					<CatalogList />
 				</div>
 			</div>
 		</section>
