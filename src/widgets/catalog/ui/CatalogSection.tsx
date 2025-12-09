@@ -8,8 +8,6 @@ import ProductCardUI from "../../../entities/productCard/ui/ProductCardUI";
 
 const CatalogSection: FC = () => {
   const filters = ["Все", "Металлочерепица", "Профнастил", "Фальцевая кровля"];
-  const metalItems = ["М1", "М2", "М3"];
-  const profItems = ["П1", "П2", "П3", "П4"];
   const product = {
     img: "https://lh6.googleusercontent.com/proxy/GjN501iwXUTQqlmhCzWe3aGqsZ16va1tpQFo5CeUblbo5jw7zQGKepcJaYcdnG0BEPPcCtXfY45-PWXeTqVkpMy5gyykblNGARDk5EzDK-4pWX8SxDuA5ntKSnFGzw",
     productName: "Профнастил HC35",

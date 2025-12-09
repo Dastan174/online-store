@@ -1,3 +1,4 @@
+import ProductForm from "../entities/productForm/ui/ProductForm";
 import AboutUs from "../widgets/aboutUs/ui/AboutUs";
 import CatalogSection from "../widgets/catalog/ui/CatalogSection";
 import { Footer } from "../widgets/footer";
@@ -5,10 +6,12 @@ import { Header } from "../widgets/header";
 import Hero from "../widgets/hero/ui/Hero";
 import Orders from "../widgets/orders/ui/Orders";
 import OurClients from "../widgets/ourClients/ui/OurClients";
+import Products from "../widgets/products/ui/Products";
 import QuestionsSection from "../widgets/questionsSection/ui/QuestionsSection";
+import Sidebar from "../widgets/sidebar/ui/Sidebar";
 import { TestSection } from "../widgets/testSection/ui/TestSection";
 
-export default function Home() {
+const page = () => {
   return (
     <div
       style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
@@ -26,4 +29,6 @@ export default function Home() {
       <Orders/>
     </div>
   );
-}
+};
+
+export default page;

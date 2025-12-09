@@ -14,7 +14,6 @@ interface OrderRowProps {
   order: Order;
 }
 
-
 const OrderRow: React.FC<OrderRowProps> = ({ order }) => {
   return (
     <tr className={scss.row}>

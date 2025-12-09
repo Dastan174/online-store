@@ -1,0 +1,41 @@
+.row {
+  height: 54px;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.status--new {
+  background: #e0f2ff;
+  color: #0077c2;
+}
+
+.status--processing {
+  background: #fff3cd;
+  color: #b88600;
+}
+
+.status--ready {
+  background: #d4f8d4;
+  color: #1b7f1b;
+}
+
+.actionBtn {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s ease;
+}
+
+.actionBtn:hover {
+  background: #eaeaea;
+}
