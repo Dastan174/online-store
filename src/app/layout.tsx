@@ -1,14 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "../widgets/header/ui/Header";
-import Footer from "../widgets/footer/ui/Footer";
-import Hero from "../widgets/hero/ui/Hero";
-import AboutUs from "../widgets/aboutUs/ui/AboutUs";
-import { TestSection } from "../widgets/testSection/ui/TestSection";
-import CatalogSection from "../widgets/catalog/ui/CatalogSection";
-import QuestionsSection from "../widgets/questionsSection/ui/QuestionsSection";
-import OurClients from "../widgets/ourClients/ui/OurClients";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,8 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-       
+     
         {children}
+     
       </body>
     </html>
   );

@@ -1,10 +1,13 @@
+import ProductForm from "../entities/productForm/ui/ProductForm";
 import AboutUs from "../widgets/aboutUs/ui/AboutUs";
 import CatalogSection from "../widgets/catalog/ui/CatalogSection";
-import Footer from "../widgets/footer/ui/Footer";
-import Header from "../widgets/header/ui/Header";
+import { Footer } from "../widgets/footer";
+import { Header } from "../widgets/header";
 import Hero from "../widgets/hero/ui/Hero";
 import OurClients from "../widgets/ourClients/ui/OurClients";
+import Products from "../widgets/products/ui/Products";
 import QuestionsSection from "../widgets/questionsSection/ui/QuestionsSection";
+import Sidebar from "../widgets/sidebar/ui/Sidebar";
 import { TestSection } from "../widgets/testSection/ui/TestSection";
 
 const page = () => {
