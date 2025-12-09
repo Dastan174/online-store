@@ -4,6 +4,7 @@ import { Footer } from "../widgets/footer";
 import { Header } from "../widgets/header";
 import Hero from "../widgets/hero/ui/Hero";
 import OurClients from "../widgets/ourClients/ui/OurClients";
+import Products from "../widgets/products/ui/Products";
 import QuestionsSection from "../widgets/questionsSection/ui/QuestionsSection";
 import { TestSection } from "../widgets/testSection/ui/TestSection";
 
