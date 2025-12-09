@@ -1,3 +1,4 @@
+import ProductForm from "../entities/productForm/ui/ProductForm";
 import AboutUs from "../widgets/aboutUs/ui/AboutUs";
 import CatalogSection from "../widgets/catalog/ui/CatalogSection";
 import { Footer } from "../widgets/footer";
