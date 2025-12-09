@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import scss from "./Sidebar.module.scss";
-import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
