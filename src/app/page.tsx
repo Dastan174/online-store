@@ -3,6 +3,7 @@ import CatalogSection from "../widgets/catalog/ui/CatalogSection";
 import { Footer } from "../widgets/footer";
 import { Header } from "../widgets/header";
 import Hero from "../widgets/hero/ui/Hero";
+import Orders from "../widgets/orders/ui/Orders";
 import OurClients from "../widgets/ourClients/ui/OurClients";
 import QuestionsSection from "../widgets/questionsSection/ui/QuestionsSection";
 import { TestSection } from "../widgets/testSection/ui/TestSection";
@@ -22,6 +23,7 @@ export default function Home() {
         <OurClients />
       </div>
       <Footer />
+      <Orders/>
     </div>
   );
 }
