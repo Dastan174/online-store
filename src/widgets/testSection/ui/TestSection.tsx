@@ -1,6 +1,6 @@
-import { TestOptionCard } from "@/entities/testOptionCard/ui/TestOptionCard";
+import InfoItem from "../../../entities/infoItem/ui/InfoItem";
+import { TestOptionCard } from "../../../entities/testOptionCard/ui/TestOptionCard";
 import scss from "./testSection.module.scss";
-import InfoItem from "@/entities/infoItem/ui/InfoItem";
 
 export const TestSection = () => {
   return (
@@ -34,7 +34,7 @@ export const TestSection = () => {
                     <h4>Ответьте на 5 вопросов <br />
                     и получите в конце:</h4>
                 </div>
-           <InfoItem />
+           <InfoItem/>
             </div>
           </div>
         </div>
