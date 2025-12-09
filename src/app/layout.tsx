@@ -3,11 +3,12 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "../widgets/header/ui/Header";
 import Footer from "../widgets/footer/ui/Footer";
-import Reviews from "../widgets/reviews/ui/Reviews";
-import ReviewCard from "../entities/reviewCard/ui/ReviewCard";
 import Hero from "../widgets/hero/ui/Hero";
 import AboutUs from "../widgets/aboutUs/ui/AboutUs";
-import ReviewsCard from "../entities/reviewsCard/ui/ReviewsCard";
+import { TestSection } from "../widgets/testSection/ui/TestSection";
+import CatalogSection from "../widgets/catalog/ui/CatalogSection";
+import QuestionsSection from "../widgets/questionsSection/ui/QuestionsSection";
+import OurClients from "../widgets/ourClients/ui/OurClients";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,20 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            minHeight: "100vh",
-          }}
-        >
-          {/* <Header />
-          <Hero />
-          <AboutUs />
-          <TestSection /> */}
-          <div style={{ flex: 1 }}></div>
-          {/* <Footer /> */}
-        </div>
+       
         {children}
       </body>
     </html>
