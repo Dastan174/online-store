@@ -9,7 +9,7 @@ const Sidebar = () => {
   return (
     <div className={`${scss.sidebar} ${isOpen ? scss.opened : scss.closed}`}>
       <span onClick={() => setIsOpen(!isOpen)} className={scss.open}>
-        {isOpen ? "<" : ">"}
+       
       </span>
 
       <a href="/">Dashboard</a>
