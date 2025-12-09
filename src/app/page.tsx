@@ -7,13 +7,13 @@ import OurClients from "../widgets/ourClients/ui/OurClients";
 import QuestionsSection from "../widgets/questionsSection/ui/QuestionsSection";
 import { TestSection } from "../widgets/testSection/ui/TestSection";
 
-
-export default function Home() {
+const page = () => {
   return (
     <div
       style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
     >
-      
+      <Header />
+      <div style={{ flex: 1 }}>
         <Hero />
         <AboutUs />
         <TestSection />
@@ -21,6 +21,9 @@ export default function Home() {
         <QuestionsSection />
         <OurClients />
       </div>
-   
+      <Footer />
+    </div>
   );
-}
+};
+
+export default page;
