@@ -1,5 +1,6 @@
 import React from "react";
 import scss from "./productCardUi.module.scss";
+import { useReadProduct } from "../../lib/readProduct/useReadProduct";
 
 
 interface ProductCardProps {
@@ -15,6 +16,7 @@ interface ProductCard {
 }
 
 const ProductCardUI = ({ product }: ProductCardProps) => {
+  
   return (
     <section className={scss.card}>
       <img src={product.img} alt={product.productName} className={scss.image} />
