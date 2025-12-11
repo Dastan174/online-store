@@ -26,7 +26,7 @@ const page = () => {
         <OurClients />
       </div>
       <Footer />
-      <Orders/>
+      <Orders />
     </div>
   );
 };
