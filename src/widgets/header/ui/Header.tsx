@@ -1,9 +1,11 @@
+"use client";
 import Image from "next/image";
-import { FaWhatsapp, FaTelegram, FaVk } from "react-icons/fa";
+import Link from "next/link";
+import { FaWhatsapp, FaTelegram, FaVk, FaUserPlus } from "react-icons/fa";
 import scss from "./header.module.scss";
 import logo from "../../../../public/logo.svg";
 
-function Header() {
+const Header = () => {
   return (
     <header className={scss.container}>
       <div className="container">
@@ -14,7 +16,9 @@ function Header() {
             <h2>Санкт-Петербург, Горелово, Волхонское шоссе, 6</h2>
           </div>
 
-          <button className={scss.button}>Посмотреть каталог</button>
+          <div className={scss.actions}>
+            <button className={scss.button}>Посмотреть каталог</button>
+          </div>
 
           <div className={scss.icons}>
             <span>Задайте вопрос online:</span>
@@ -45,10 +49,14 @@ function Header() {
               </a>
             </div>
           </div>
+
+          <Link href="/register" className={scss.register}>
+            <FaUserPlus />
+          </Link>
         </div>
       </div>
     </header>
   );
-}
+};
 
 export default Header;
