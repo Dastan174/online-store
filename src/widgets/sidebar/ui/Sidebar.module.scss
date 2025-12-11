@@ -1,22 +1,16 @@
 .sidebar {
-  padding: 10vh 3vw;         
-  width: 25%;               
-  min-width: 200px;           
-  max-width: 350px;           
-  height: 100vh;
-
   position: fixed;
   left: 0;
-  bottom: 0;
-
+  top: 0;
+  width: 260px;
+  height: 100vh;
+  background: #fff;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 3vh;                  
-  background: #fff;
-
-  transition: transform 0.5s ease;
-
+  gap: 20px;
+  transition: transform 0.4s ease;
+  border-right: 1px solid #ddd;
   a {
     width: 80%;
     padding: 1.4vh 1vw;
@@ -25,6 +19,7 @@
     text-decoration: none;
     border-bottom: 2px solid transparent;
     transition: 0.3s;
+    font-size: 17px;
   }
 
   a:hover,
@@ -32,18 +27,18 @@
     border-bottom: 2px solid #ffc400;
   }
 
-.open {
-  position: fixed;
-  left: 100%; 
-  top: 50%;
-  padding: 20px 3px;
-  cursor: pointer;
-  border-radius: 0 3px 3px 0;
-  color: #fff;
-  background: #0000007b;
-  z-index: 10; 
-}
-
+  .open {
+    position: absolute;
+    left: 100%;
+    top: 40%;
+    padding: 18px 5px;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    color: #fff;
+    background: #0000007b;
+    font-size: 18px;
+    user-select: none;
+  }
 }
 
 .closed {
@@ -52,4 +47,27 @@
 
 .opened {
   transform: translateX(0);
+}
+.openButton {
+  position: absolute;
+  right: -20px;
+  top: 40%;
+  width: 20px;
+  height: 60px;
+  background: #00000070;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.backHome {
+  margin-top: auto;
+  transition: 0.3s;
+}
+
+.backHome:hover {
+  background: rgba(255, 0, 0, 0.711);
+  color: white;
+  opacity: 0.9;
 }
