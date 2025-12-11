@@ -10,7 +10,7 @@ interface ReviewProps {
   };
 }
 
-export const ReviewCard = ({ review }: ReviewProps) => {
+export const ReviewsCard = ({ review }: ReviewProps) => {
   return (
     <div className={scss.card}>
       <div className={scss.avatar}>
@@ -32,4 +32,4 @@ export const ReviewCard = ({ review }: ReviewProps) => {
   );
 };
 
-export default ReviewCard;
+export default ReviewsCard;
