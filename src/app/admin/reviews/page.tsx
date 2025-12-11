@@ -1,7 +1,8 @@
 import React from "react";
+import Reviews from "../../../widgets/reviews/ui/Reviews";
 
 const page = () => {
-  return "reviews";
+  return <Reviews />;
 };
 
 export default page;

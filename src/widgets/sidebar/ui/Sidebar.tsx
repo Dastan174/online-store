@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import scss from "./Sidebar.module.scss";
+import Link from "next/link";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -12,11 +13,11 @@ const Sidebar = () => {
         {isOpen ? "<" : ">"}
       </span>
 
-      <a href="/">Dashboard</a>
-      <a href="/">Products</a>
-      <a href="/">Orders</a>
-      <a href="/">Users</a>
-      <a href="/">Reviews</a>
+      <Link href="/admin/dashboard">Dashboard</Link>
+      <Link href="/admin/products">Products</Link>
+      <Link href="/admin/orders">Orders</Link>
+      <Link href="/admin/form">Add Product</Link>
+      <Link href="/admin/reviews">Reviews</Link>
     </div>
   );
 };
