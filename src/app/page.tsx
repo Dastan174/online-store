@@ -27,8 +27,6 @@ const page = () => {
         <OurClients />
       </div>
       <Footer />
-      <ProductForm/>
-      <Products/>
     </div>
   );
 };
