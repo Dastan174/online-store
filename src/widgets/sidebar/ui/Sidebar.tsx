@@ -9,7 +9,8 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
       </span>
 
       <a href="/admin/dashboard">Dashboard</a>
-      <a href="/admin/productForm">Products</a>
+      <a href="/admin/productForm">Add Product</a>
+      <a href="/admin/products">Products</a>
       <a href="/admin/orders">Orders</a>
       <a href="/admin/users">Users</a>
       <a href="/admin/reviews">Reviews</a>
