@@ -1,11 +1,8 @@
-import React from 'react';
+import React from "react";
+import Products from "../../../widgets/products/ui/Products";
 
 const page = () => {
-    return (
-        <div>
-            products
-        </div>
-    );
+  return <Products />;
 };
 
 export default page;

@@ -1,5 +1,6 @@
 "use client";
 import scss from "./Sidebar.module.scss";
+import Link from "next/link";
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
   return (
