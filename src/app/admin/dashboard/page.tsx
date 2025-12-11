@@ -1,8 +1,5 @@
 import React from "react";
 import Dashboard from "../../../widgets/dashboard/Dashboard";
 
-const page = () => {
-  return <Dashboard />;
-};
-
+const page = () => <Dashboard />;
 export default page;
