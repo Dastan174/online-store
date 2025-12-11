@@ -1,10 +1,11 @@
 "use client";
 import axios from "axios";
 import { IProduct } from "../../productForm/ui/ProductForm";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 
 export const useCreateProduct = () => {
-  return useMutation({
+  const queryClient  = useQueryClient()
+  return useMutation({ 
     mutationKey: ["create-product"],
     mutationFn: async (newProduct: IProduct) => {
       const response = await axios.post(
@@ -13,5 +14,8 @@ export const useCreateProduct = () => {
       );
       return response.data;
     },
+    onSuccess: () => {
+      queryClient.invalidateQueries({queryKey: ["read-product"]})
+    }
   });
 };

@@ -28,6 +28,7 @@ const page = () => {
       </div>
       <Footer />
       <ProductForm/>
+      <Products/>
     </div>
   );
 };
