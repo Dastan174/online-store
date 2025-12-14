@@ -6,15 +6,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 
     .address {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
 
       h2 {
-        width: 165px;
+        width: 180px;
         font-size: 15px;
         color: #444;
       }
@@ -26,19 +26,29 @@
       }
     }
 
-    .button {
-      padding: 12px 20px;
-      border: none;
-      border-radius: 60px;
-      background: radial-gradient(circle, #ffc400 0%, #ff9900 100%);
-      cursor: pointer;
-      font-weight: 500;
+    .actions {
+      display: flex;
+      align-items: center;
+
+      .button {
+        padding: 12px 20px;
+        border: none;
+        border-radius: 60px;
+        background: radial-gradient(circle, #ffc400 0%, #ff9900 100%);
+        cursor: pointer;
+        font-weight: 500;
+        transition: opacity 0.2s;
+
+        &:hover {
+          opacity: 0.85;
+        }
+      }
     }
 
     .icons {
       display: flex;
-      align-items: center;
       flex-direction: column;
+      align-items: flex-start;
       gap: 8px;
 
       span {
@@ -59,11 +69,16 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 30px;
-          height: 30px;
+          width: 34px;
+          height: 34px;
           border-radius: 50%;
           color: #fff;
           font-size: 16px;
+          transition: opacity 0.2s;
+
+          &:hover {
+            opacity: 0.8;
+          }
         }
 
         .wa {
@@ -77,20 +92,47 @@
         }
       }
     }
+    .register {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background: #2c3e50;
+      color: #fff;
+      font-size: 22px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s;
+
+      &:hover {
+        background: #34495e;
+      }
+    }
   }
 }
 
-// Адаптив
-
+/* Адаптив */
 @media (max-width: 768px) {
   .main {
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
-  }
-  .button {
-    width: 200px;
-    text-align: center;
+    gap: 15px;
+
+    .actions {
+      width: 100%;
+      .button {
+        width: 200px;
+        text-align: center;
+      }
+    }
+
+    .register {
+      width: 200px;
+      justify-content: center;
+      text-align: center;
+    }
   }
 }
 
