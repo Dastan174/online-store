@@ -1,13 +1,10 @@
-"use client"
-import { useForm } from "react-hook-form";
 import scss from "./productForm.module.scss";
-import { useCreateProduct } from "../../lib/createProduct/useCreateProduct";
 
 interface IProductProps {
   product?: IProduct;
 }
 
-export interface IProduct {
+interface IProduct {
   title: string;
   brand: string;
   price: number | string;
@@ -17,49 +14,43 @@ export interface IProduct {
 }
 
 export default function ProductForm({ product }: IProductProps) {
-  const {handleSubmit, reset , register} = useForm()
-  const {mutate: addProduct} = useCreateProduct() 
-  const handleData = (data : IProduct) => {
-    addProduct(data)
-    reset()
-  }
   return (
     <div className={scss.container}>
       <div className={scss.mainContainer}>
         <div className="container">
-          <form onSubmit={handleSubmit(handleData)} className={scss.addToProducted}>
+          <div className={scss.addToProducted}>
             <h2>Добавление товара</h2>
-            <input {...register("title")}
+            <input
               type="text"
               placeholder="Название товара"
               defaultValue={product?.title}
             />
-            <input {...register("brand")}
+            <input
               type="text"
               placeholder="Бренд"
               defaultValue={product?.brand}
             />
-            <input {...register("price")}
+            <input
               type="text"
               placeholder="Цена"
               defaultValue={product?.price}
             />
-            <input {...register("color")}
+            <input
               type="text"
               placeholder="Цвет"
               defaultValue={product?.color}
             />
-            <input {...register("image")}
+            <input
               type="text"
               placeholder="URL картинки"
               defaultValue={product?.image}
             />
-            <textarea {...register("description")}
+            <textarea
               placeholder="Описание"
               defaultValue={product?.description}
             />
-            <button type="submit">Сохранить</button>
-          </form>
+            <button>Сохранить</button>
+          </div>
         </div>
       </div>
     </div>
