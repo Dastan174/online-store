@@ -11,7 +11,7 @@ export const TestSection = () => {
             <span>Пройдите тест и рассчитайте </span>
             <br />
             стоимость кровли под ваш объект <br />с точностью 97%
-          </h1>  
+          </h1>
           <div className={scss.testBlock}>
             <div className={scss.right}>
               <div className={scss.discount}>
@@ -29,12 +29,13 @@ export const TestSection = () => {
               <TestOptionCard />
             </div>
             <div className={scss.left}>
-                <div className={scss.cardImg}>
-                    <img src="/images/left.png" alt="himg" />
-                    <h4>Ответьте на 5 вопросов <br />
-                    и получите в конце:</h4>
-                </div>
-           <InfoItem/>
+              <div className={scss.cardImg}>
+                <img src="/images/left.png" alt="himg" />
+                <h4>
+                  Ответьте на 5 вопросов <br />и получите в конце:
+                </h4>
+              </div>
+              <InfoItem />
             </div>
           </div>
         </div>

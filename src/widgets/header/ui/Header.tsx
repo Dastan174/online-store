@@ -4,8 +4,11 @@ import Link from "next/link";
 import { FaWhatsapp, FaTelegram, FaVk, FaUserPlus } from "react-icons/fa";
 import scss from "./header.module.scss";
 import logo from "../../../../public/logo.svg";
+import { MdAdminPanelSettings } from "react-icons/md";
+import { useRouter } from "next/navigation";
 
-const Header = () => {
+function Header() {
+  const router = useRouter();
   return (
     <header className={scss.container}>
       <div className="container">
@@ -46,6 +49,9 @@ const Header = () => {
                 className={scss.vk}
               >
                 <FaVk />
+              </a>
+              <a onClick={() => router.push("/admin")} className={scss.admin}>
+                <MdAdminPanelSettings />
               </a>
             </div>
           </div>

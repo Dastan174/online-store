@@ -1,14 +1,14 @@
+"use client"
 import React from "react";
 import scss from "./productCardUi.module.scss";
-
 
 interface ProductCardProps {
   product: ProductCard;
 }
 interface ProductCard {
-  img: string;
-  productName: string;
-  brend: string;
+  image: string;
+  title: string;
+  brand: string;
   maxLength: string;
   minLength: string;
   price: number;
@@ -16,25 +16,26 @@ interface ProductCard {
 
 const ProductCardUI = ({ product }: ProductCardProps) => {
   return (
+    
     <section className={scss.card}>
-      <img src={product.img} alt={product.productName} className={scss.image} />
+      <img src={product?.image} alt={product?.title} className={scss.image} />
 
-      <h2 className={scss.title}>{product.productName}</h2>
+      <h2 className={scss.title}>{product?.title}</h2>
 
       <div className={scss.brends}>
         <p>Бренд</p>
-        <p className={scss.value}>{product.brend}</p>
+        <p className={scss.value}>{product?.brand}</p>
 
         <p>Максимальная длина, м</p>
-        <p className={scss.value}>{product.maxLength}</p>
+        <p className={scss.value}>{product?.maxLength}</p>
 
         <p>Минимальная длина, м</p>
-        <p className={scss.value}>{product.minLength}</p>
+        <p className={scss.value}>{product?.minLength}</p>
       </div>
 
       <div className={scss.priceBlock}>
         <span>от</span>
-        <h3>{product.price} ₽ / м²</h3>
+        <h3>{product?.price} ₽ / м²</h3>
       </div>
 
       <div className={scss.selects}>

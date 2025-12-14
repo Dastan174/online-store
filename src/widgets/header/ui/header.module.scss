@@ -59,6 +59,11 @@
       .socials {
         display: flex;
         gap: 8px;
+        .admin {
+          margin-right: auto;
+          color:none;
+          font-size: 30px;
+        }
 
         a {
           display: flex;

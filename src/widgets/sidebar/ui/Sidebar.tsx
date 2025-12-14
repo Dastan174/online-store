@@ -1,22 +1,23 @@
 "use client";
-
-import { useState } from "react";
 import scss from "./Sidebar.module.scss";
+import Link from "next/link";
 
-const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(true);
-
+const Sidebar = ({ isOpen, setIsOpen }) => {
   return (
     <div className={`${scss.sidebar} ${isOpen ? scss.opened : scss.closed}`}>
-      <span onClick={() => setIsOpen(!isOpen)} className={scss.open}>
+      <span className={scss.openButton} onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? "<" : ">"}
       </span>
 
-      <a href="/">Dashboard</a>
-      <a href="/">Products</a>
-      <a href="/">Orders</a>
-      <a href="/">Users</a>
-      <a href="/">Reviews</a>
+      <a href="/admin/dashboard">Dashboard</a>
+      <a href="/admin/productForm">Add Product</a>
+      <a href="/admin/products">Products</a>
+      <a href="/admin/orders">Orders</a>
+      <a href="/admin/users">Users</a>
+      <a href="/admin/reviews">Reviews</a>
+      <a href="/" className={scss.backHome}>
+        Back to home
+      </a>
     </div>
   );
 };
